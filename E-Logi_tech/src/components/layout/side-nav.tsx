@@ -27,7 +27,7 @@ interface SideNavProps {
 }
 
 export function SideNav({ configUser }: SideNavProps): React.JSX.Element {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? '';
   let navItems: NavItemConfig[] = [];
 
   switch (configUser) {

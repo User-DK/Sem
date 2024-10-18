@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import { calculatePrice, CalculatePriceResponse } from '@/app/user/price-estimate/page';
+import { CalculatePriceResponse, calculatePrice } from '@/utils/calculate-price';
 import {
   Box,
   Button,

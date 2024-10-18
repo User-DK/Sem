@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import { calculatePrice } from '@/app/user/price-estimate/page';
+import { calculatePrice } from '@/utils/calculate-price';
 import {
   Box,
   Button,
@@ -170,7 +170,7 @@ export function BookingConfirmationForm({ open, handleClose }: BookingConfirmati
             overflow: 'auto',
           }}
         >
-          <form ref={formRef}  onSubmit={handleSubmit}>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <Card sx={{ maxWidth: 600 }}>
               <CardHeader subheader="Please Fill up the information correctly" title="Booking Details" />
               <Divider />

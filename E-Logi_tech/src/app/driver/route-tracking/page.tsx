@@ -196,12 +196,12 @@ const containerStyle = {
 
 const RouteTracking = () => {
   const searchParams = useSearchParams();
-  const jobId = searchParams.get('jobId');
-  const plat = searchParams.get('plat');
-  const plng = searchParams.get('plng');
-  const dlat = searchParams.get('dlat');
-  const dlng = searchParams.get('dlng');
-  const initialStatus = searchParams.get('status');
+  const jobId = searchParams?.get('jobId');
+  const plat = searchParams?.get('plat');
+  const plng = searchParams?.get('plng');
+  const dlat = searchParams?.get('dlat');
+  const dlng = searchParams?.get('dlng');
+  const initialStatus = searchParams?.get('status');
 
   const [currentPosition, setCurrentPosition] = useState<{ lat: number; lng: number }>({ lat: 0, lng: 0 });
   const [destination, setDestination] = useState<{ lat: number; lng: number }>({ lat: 0, lng: 0 });

@@ -1,7 +1,7 @@
 // src/app/api/job/[jobId].js
 import { NextApiRequest, NextApiResponse } from 'next';
-import dbConnect from '../../../utils/dbConnect'; // Ensure this points correctly to your dbConnect utility
-import Job from '../../../models/Job';
+import dbConnect from '../../lib/dbConnect'; 
+import {Job} from '../../models/Schema';
 
 export default async function handler(req, res) {
   await dbConnect(); // Connect to the database

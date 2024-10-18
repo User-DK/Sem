@@ -30,7 +30,7 @@ export interface MobileNavProps {
 }
 
 export function MobileNav({ open, onClose, configUser }: MobileNavProps): React.JSX.Element {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? '';
   let dynamicPath = '';
   let navItems: NavItemConfig[] = [];
   switch (configUser) {

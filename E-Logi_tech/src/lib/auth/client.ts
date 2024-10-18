@@ -10,12 +10,16 @@ function generateToken(): string {
 }
 
 const user = {
-  id: 'USR-000',
-  avatar: '/assets/avatar.png',
-  firstName: 'Sofia',
-  lastName: 'Rivers',
-  type:'admin',
-  email: 'sofia@devias.io',
+  id: '1',
+  name: 'Sofia',
+  email: 'sofia@gmail.com',
+  role: 'user',
+  phone: "1234567890", 
+  address: "1234 Main St, New York, NY 10001",
+  password: 'Secret1',
+  createdAt:"2021-09-01T12:00:00Z",
+  updatedAt: "2021-09-01T12:00:00Z",
+  
 } satisfies User;
 
 export interface SignUpParams {
